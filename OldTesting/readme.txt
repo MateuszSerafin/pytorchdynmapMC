@@ -1,0 +1,1 @@
+I just want to include some of previous tests i did realistically it's a huge mess but without it looks like i didn't really do anything. It includes stuff from really beginning when i first touched tensorflow. Then i started using pytorch.

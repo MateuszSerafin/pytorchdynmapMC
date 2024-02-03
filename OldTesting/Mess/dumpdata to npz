@@ -1,0 +1,12 @@
+import numpy
+from PIL import Image
+import os
+arr = []
+cnt = 0
+for img in os.listdir():
+    img = Image.open(img).convert("RGB").resize((64,64))
+    arr.append(numpy.moveaxis(numpy.asarray(img), -1, 0))
+    img.close()
+    cnt += 1
+    print(cnt)
+numpy.savez("64dump.npz", arr)
